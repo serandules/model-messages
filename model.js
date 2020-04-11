@@ -73,6 +73,9 @@ schema.plugin(mongins());
 schema.plugin(mongins.user({
     optional: true
 }));
+schema.plugin(mongins._({
+    workflow: 'model-messages'
+}));
 schema.plugin(mongins.permissions({
     workflow: 'model-messages'
 }));
